@@ -1,0 +1,25 @@
+body{
+    background-color: #07090E;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.header-menu a{
+    color: white;
+}
+
+.header-menu li{
+    padding-left: 3vw;
+    font-size: 1.3vw;
+}
+
+.languages a{
+    color: #FFFFFF;
+    font-size: 1.1vw;
+}
