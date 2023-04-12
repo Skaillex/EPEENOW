@@ -16,10 +16,14 @@ ul{
 
 .header-menu li{
     margin-left: 3vw;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .languages a{
     color: #FFFFFF;
-    font-size: 1.1rem;
+    font-size: 1rem;
+}
+
+.languages li{
+    margin-left: 3vw;
 }
