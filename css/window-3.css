@@ -9,6 +9,10 @@ body {
 
 }
 
+a {
+    -webkit-tap-highlight-color: transparent !important;
+}
+
 .topnav {
     overflow: hidden;
 }

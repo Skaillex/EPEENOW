@@ -10,7 +10,9 @@ body {
     background-repeat: no-repeat;
     padding-bottom: 10vw;
 }
-
+a {
+    -webkit-tap-highlight-color: transparent !important;
+}
 .fon-card-2{
     background-image: url(../images/card-3.png);
     background-size: 100%;
