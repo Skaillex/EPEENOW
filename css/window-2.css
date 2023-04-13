@@ -8,7 +8,14 @@ body {
     background-image: url(/images/fon-card-1.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100rem;
+    padding-bottom: 10vw;
+}
+
+.fon-card-2{
+    background-image: url(/images/card-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 10vw;
 }
 
 .topnav {
@@ -61,7 +68,16 @@ body {
         background-image: url(/images/fon-card-1.png);
         background-size: 0%;
         background-repeat: no-repeat;
-        height: 100rem;
+    }
+    .fon-card-2{
+        background-image: url(/images/fon-card-1.png);
+        background-size: 0%;
+        background-repeat: no-repeat;
+    }
+
+    .text-card{
+        text-align: center;
+        order:2
     }
 }
 
@@ -108,6 +124,37 @@ body {
 
 @media screen and (max-width: 1100px) {
 .text-card{
-    width: 1000px!important;
+    width: 500px!important;
+    text-align: center;
 }
 }
+
+@media screen and (max-width: 1250px) {
+    .card-button{
+        margin: 0 auto;
+    }
+    }
+
+@media screen and (max-width: 630px) {
+    
+    .card-img{
+    width: 400px;
+    }
+
+    }
+
+    @media screen and (max-width: 460px) {
+    
+        .card-img{
+        width: 300px;
+        }
+    
+        }
+
+        @media screen and (max-width: 360px) {
+    
+            .card-img{
+            width: 200px;
+            }
+        
+            }
