@@ -121,6 +121,15 @@ body {
     border-radius: 10px;
   }
 
+  @media screen and (max-width: 600px) {
+    .login-box {
+        margin-top: 16rem;
+        margin-left: 50vw;
+        width: 50vw;
+      }
+      
+  }
+
   @media screen and (min-width: 1450px) {
     .login-box {
         margin-top: 20rem;
@@ -146,6 +155,7 @@ body {
     color: #fff;
     margin-bottom: 30px;
     border: none;
+    padding-right: 1rem;
     border-bottom: 1px solid #fff;
     outline: none;
     background: transparent;
