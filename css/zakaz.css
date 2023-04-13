@@ -33,7 +33,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1100px) {
     .buy {
         text-align: center;
         line-height: 5rem;
@@ -66,7 +66,7 @@ body {
 }
 
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1100px) {
     .buy {
 
         text-align: center !important;
@@ -117,7 +117,14 @@ body {
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
   }
-  
+
+  @media screen and (min-width: 1450px) {
+    .login-box {
+        margin-top: 20rem;
+        
+      }
+  }
+
   .login-box h2 {
     margin: 0 0 30px;
     padding: 0;
