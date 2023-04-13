@@ -18,6 +18,13 @@ body {
     padding-bottom: 10vw;
 }
 
+.fon-card-3{
+    background-image: url(../images/fon-card-3.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-bottom: 10vw;
+}
+
 .topnav {
     overflow: hidden;
 }
@@ -70,6 +77,12 @@ body {
         background-repeat: no-repeat;
     }
     .fon-card-2{
+        background-image: url(../images/fon-card-1.png);
+        background-size: 0%;
+        background-repeat: no-repeat;
+    }
+
+    .fon-card-3{
         background-image: url(../images/fon-card-1.png);
         background-size: 0%;
         background-repeat: no-repeat;
