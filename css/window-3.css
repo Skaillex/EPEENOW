@@ -8,7 +8,6 @@ body {
     height: 90rem;
 
 }
-
 a {
     -webkit-tap-highlight-color: transparent !important;
 }
@@ -16,6 +15,7 @@ a {
 .topnav {
     overflow: hidden;
 }
+
 
 .topnav a {
     float: right;
