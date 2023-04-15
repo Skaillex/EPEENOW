@@ -87,7 +87,9 @@ a {
     .p-text p{
         font-size: 0.9rem!important;
     }
-
+    .p-text-2{
+       width: 90vw!important;
+    }
     .taverna-text{
         font-size: 2rem!important;
     }
