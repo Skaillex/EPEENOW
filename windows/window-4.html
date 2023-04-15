@@ -6,10 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/window-4.css">
 </head>
 
 <body>
 
+    <div class="fon-4" style="">
+        <div class="topnav" id="myTopnav">
+            <img class="active" style="height: 3rem; padding-top: 2.2vw; padding-left: 4vw;" src="../images/logo.png"
+                alt="">
+            <a href="#contact " style="margin-right: 5vw;">О нас</a>
+            <a href="../windows/window-3.html">Создание Шпаги</a>
+            <a href="../windows/window-2.html">Модели</a>
+            <a href="../index.html">Главная</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="items-4" style="margin: 0 auto; margin-top: 32rem;">
+            <p class="linear-wipe" style="color: #FFFFFF;  font-size: 2.5rem; text-align: center; margin-bottom: 0;">МЫ
+                НАХОДИМСЯ ЗДЕСЬ</p>
+        </div>
+        <div style="padding-bottom: 5vw; margin: 0 auto;">
+            <a class="linear-wipe" style="color: #FFFFFF; margin-top: 0.5vw;  font-size: 1.2rem; display: block; text-align: center!important;"
+                href="https://earth.google.com/web/@33.39484246,44.48948747,36.49621428a,3424.67906378d,35y,57.22797864h,42.71714537t,-0r/data=CjsaORIxCgAZoy34frSyQEAh2m284Hg-RkAqGzMzwrAyMyc0Ni4xIk4gNDTCsDI5JzE3LjAiRRgCIAEoAg">33
+                23’46.08″ N 44 29’17.03″E</a>
+        </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
