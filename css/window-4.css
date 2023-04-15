@@ -20,19 +20,6 @@ a {
     background-image: url(../images/background-fon-window4.png); background-repeat: no-repeat; background-size: cover;
     background-position: center;
 }
-.fon-card-2{
-    background-image: url(../images/card-3.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 10vw;
-}
-
-.fon-card-3{
-    background-image: url(../images/fon-card-3.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    padding-bottom: 10vw;
-}
 
 .topnav {
     overflow: hidden;
@@ -65,6 +52,11 @@ a {
 
     .topnav a:not(:first-child) {
         display: none;
+    }
+
+    .fon-4{
+        background-image: url(../images/background-fon-window4.png)!important; background-repeat: no-repeat; background-size: cover;
+        background-position: center;
     }
 
     .topnav a.icon {
