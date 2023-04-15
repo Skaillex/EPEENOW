@@ -21,6 +21,11 @@ a {
     background-position: center;
 }
 
+.fon-5{
+    background-image: url(../images/background-fon-window5.png)!important; background-repeat: no-repeat; background-size: cover;
+    background-position: center;
+}
+
 .topnav {
     overflow: hidden;
 }
@@ -59,6 +64,8 @@ a {
         background-position: center;
     }
 
+
+
     .topnav a.icon {
         float: right;
         margin-right: 5vw;
@@ -72,31 +79,16 @@ a {
         height: 100%;
         background-repeat: no-repeat;
     }
-    .fon-card-1{
-        background-image: url(../images/fon-card-1.png);
-        background-size: 0%;
-        background-repeat: no-repeat;
-    }
-    .fon-card-2{
-        background-image: url(../images/fon-card-1.png);
-        background-size: 0%;
-        background-repeat: no-repeat;
-    }
-
-    .fon-card-3{
-        background-image: url(../images/fon-card-1.png);
-        background-size: 0%;
-        background-repeat: no-repeat;
-    }
-
-    .text-card{
-        text-align: center;
-        order:2
-    }
 }
 
 
 
+@media screen and (max-width:600px) {
+    .p-text p{
+        font-size: 0.9rem!important;
+    }
+    
+}
 
 @media screen and (max-width: 1250px) {
 
@@ -128,6 +120,10 @@ a {
     }
 
     .fon-4{
+        background-image: none;
+    }
+
+    .fon-5{
         background-image: none;
     }
 
