@@ -93,6 +93,10 @@ a {
     .taverna-text{
         font-size: 2rem!important;
     }
+
+    .card{
+        width: 90%!important;
+    }
     
 }
 
@@ -163,4 +167,5 @@ a {
     .d-none:hover{
         display:contents !important;;
     }
+
             
