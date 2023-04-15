@@ -108,6 +108,10 @@ a {
         top: 0;
     }
 
+.fon-text{
+    width: 80vw!important;
+}
+
     .topnav.responsive a {
         margin-top: 4vw;
         font-size: 4vw;
