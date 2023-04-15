@@ -2,11 +2,36 @@ body {
     margin: 0;
     font-family: 'Alegreya', serif;
     background: url(../images/background-fon-window3.png);
-    background-size: 100%;
+width: 100%;
     background-repeat: no-repeat;
     overflow-y: hidden;
-    height: 90rem;
+    height: 100rem;
 
+}
+
+@media screen and (min-width:2000px) {
+  body {
+    margin: 0;
+    font-family: 'Alegreya', serif;
+    background: url(../images/background-fon-window3.png);
+background-size: 100%;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    height: 100rem;
+
+}
+
+.buy {
+  text-align: center;
+  line-height: 5rem;
+  color: #FFFFFF;
+  margin-top: 20vw!important;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 2rem;
+
+}
 }
 a {
     -webkit-tap-highlight-color: transparent !important;
