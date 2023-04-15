@@ -159,4 +159,8 @@ a {
                     background-position: 200% center;
                 }
             }
+
+    .d-none:hover{
+        display:contents !important;;
+    }
             
