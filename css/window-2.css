@@ -178,3 +178,19 @@ a {
             }
         
             }
+            
+            .linear-wipe {
+                text-align: center;
+                background: linear-gradient(to right, #FFF 20%, rgb(201, 201, 186) 40%, rgb(100, 227, 227) 60%, #FFF 80%);
+                background-size: 200% auto;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: shine 2s linear infinite;
+            }
+            
+            @keyframes shine {
+                to {
+                    background-position: 200% center;
+                }
+            }
