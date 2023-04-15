@@ -10,36 +10,113 @@
 
     </style>
 </head>
+<style>
+    #loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 1;
+        width: 150px;
+        height: 150px;
+        margin: -75px 0 0 -75px;
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #3498db;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
 
-<body>
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
 
-    <div class="topnav" id="myTopnav">
-        <img class="active" style="height: 3rem; padding-top: 2.2vw; padding-left: 4vw;" src="./images/logo.png" alt="">
-        <a href="./windows/window-4.html" style="margin-right: 5vw;">О нас</a>
-        <a href="./windows/window-3.html">Создание Шпаги</a>
-        <a href="./windows/window-2.html">Модели</a>
-        <a href="../index.html">Главная</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
 
-    <div>
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* Add animation to "page content" */
+    .animate-bottom {
+        position: relative;
+        -webkit-animation-name: animatebottom;
+        -webkit-animation-duration: 1s;
+        animation-name: animatebottom;
+        animation-duration: 1s
+    }
+
+    @-webkit-keyframes animatebottom {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes animatebottom {
+        from {
+            opacity: 0
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    #myDiv {
+        display: none;
+    }
+</style>
+</head>
+
+<body onload="myFunction()" style="margin:0;">
+
+    <div id="loader"></div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+
+        <div class="topnav" id="myTopnav">
+            <img class="active" style="height: 3rem; padding-top: 2.2vw; padding-left: 4vw;" src="./images/logo.png"
+                alt="">
+            <a href="./windows/window-4.html" style="margin-right: 5vw;">О нас</a>
+            <a href="./windows/window-3.html">Создание Шпаги</a>
+            <a href="./windows/window-2.html">Модели</a>
+            <a href="../index.html">Главная</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
         <div>
-            <p class="buy">
-                УСПЕЙ КУПИТЬ <br> ШПАГУ RK-800</p>
-            <p class="linear-wipe"
-                style="text-align: center; line-height: 5vw; color: #C7C7C7; margin-bottom: 0px; margin-top: 0vw; margin-left: 10px; margin-right: 10px; font-size: 1.4rem;">
-                «И  комар лошадь свалит, но элегантнее на шпагах»</p>
-            <button style="margin: 0 auto; margin-top: 1rem; display: block; border: 2px solid #FFFFFF; padding: 1vw 7vw; outline: none; /* Для синий ободки */
+            <div>
+                <p class="buy">
+                    УСПЕЙ КУПИТЬ <br> ШПАГУ RK-800</p>
+                <p class="linear-wipe"
+                    style="text-align: center; line-height: 5vw; color: #C7C7C7; margin-bottom: 0px; margin-top: 0vw; margin-left: 10px; margin-right: 10px; font-size: 1.4rem;">
+                    «И  комар лошадь свалит, но элегантнее на шпагах»</p>
+                <button style="margin: 0 auto; margin-top: 1rem; display: block; border: 2px solid #FFFFFF; padding: 1vw 7vw; outline: none; /* Для синий ободки */
             border: 2px solid white;
             background: transparent;"><a class="linear-wipe"
-                    style="color: #C7C7C7; text-decoration: none; font-size: 1.3rem; font-family: 'Alegreya', serif;"
-                    href="./windows/window-1.html"><b>ОФОРМИТЬ ЗАКАЗ</b></a></button>
+                        style="color: #C7C7C7; text-decoration: none; font-size: 1.3rem; font-family: 'Alegreya', serif;"
+                        href="./windows/window-1.html"><b>ОФОРМИТЬ ЗАКАЗ</b></a></button>
+            </div>
         </div>
-    </div>
-    <div></div>
-    <div></div>
+        <div></div>
+        <div></div>
     </div>
     <script>
         function myFunction() {
@@ -51,8 +128,19 @@
             }
         }
     </script>
+    <script>
+        var myVar;
 
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+        }
 
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
+    </div>
 </body>
 
 </html>
