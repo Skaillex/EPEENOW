@@ -25,7 +25,7 @@
         }
 
         button a:hover {
-            color: #03e9f4!important;
+            color: #03e9f4 !important;
         }
 
         .topnav a {
@@ -44,7 +44,7 @@
         }
 
         .topnav a.active {
-            color: #03e9f4!important;
+            color: #03e9f4 !important;
         }
 
         .topnav .icon {
@@ -170,6 +170,27 @@
                 margin-bottom: 5vw;
             }
         }
+
+        .linear-wipe {
+            text-align: center;
+
+            background: linear-gradient(to right, #FFF 20%, rgb(201, 201, 186) 40%, rgb(100, 227, 227) 60%, #FFF 80%);
+            background-size: 200% auto;
+
+            color: #000;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            animation: shine 2s linear infinite;
+        }
+
+        @keyframes shine {
+            to {
+                background-position: 200% center;
+            }
+        }
     </style>
 </head>
 
@@ -190,14 +211,14 @@
         <div>
             <p class="buy">
                 УСПЕЙ КУПИТЬ <br> ШПАГУ RK-800</p>
-            <p
+            <p class="linear-wipe"
                 style="text-align: center; line-height: 5vw; color: #C7C7C7; margin-bottom: 0px; margin-top: 0vw; margin-left: 10px; margin-right: 10px; font-size: 1.4rem;">
                 «И  комар лошадь свалит, но элегантнее на шпагах»</p>
             <button style="margin: 0 auto; margin-top: 1rem; display: block; border: 2px solid #FFFFFF; padding: 1vw 7vw; outline: none; /* Для синий ободки */
             border: 2px solid white;
-            background: transparent;"><a
+            background: transparent;"><a class="linear-wipe"
                     style="color: #C7C7C7; text-decoration: none; font-size: 1.3rem; font-family: 'Alegreya', serif;"
-                    href="./windows/window-1.html">ОФОРМИТЬ ЗАКАЗ</a></button>
+                    href="./windows/window-1.html"><b>ОФОРМИТЬ ЗАКАЗ</b></a></button>
         </div>
     </div>
     <div></div>
