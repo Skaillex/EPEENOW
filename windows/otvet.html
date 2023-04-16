@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подтверждение заказа</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/otvet.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav" style="position: relative; z-index: 2; background-color: rgba(0, 0, 0, 0.8);">
+        <img class="active" style="height: 3rem; padding-top: 1.6vw; padding-left: 4vw;" src="../images/logo.png"
+            alt="">
+        <a href="../windows/window-4.html" style="margin-right: 5vw;">О нас</a>
+        <a href="../windows/window-3.html">Создание Шпаги</a>
+        <a href="../windows/window-2.html">Модели</a>
+        <a href="../index.html">Главная</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="/images/-111101.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="content" style="margin: 0 auto!important;">
+        <h1 style="text-align: center; font-size: 2rem;">СПАСИБО ЗА ПОКУПКУ</h1>
+        <div style="display: flex; align-items: center; margin-bottom: 1vw; flex-wrap: wrap; justify-content: center;">
+            <div>
+                <p style="font-size: 1.5rem; margin: 0;  margin-right: 2vw; color: rgb(211, 211, 211);">Ваш номер
+                    заказа:
+                </p>
+            </div>
+            <div style="font-size: 2rem;" id="div"></div>
+        </div>
+        <div id="text" style="display: flex; justify-content: center;">
+            <input class="myBtn" type="button" value="Подтвердить" id="button">
+        </div>
+        <!-- Use a button to pause/play the video with JavaScript -->
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function Random() {
+            const max = 100;
+            return Math.round(Math.random() * max);
+        }
+
+        const btn = document.getElementById('button');
+        const div = document.getElementById('div');
+
+        btn.onclick = function () {
+            div.innerHTML = Random();
+            document.getElementById('text').hidden = true;
+        }
+    </script>
+</body>
+
+</html>
