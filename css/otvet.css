@@ -1,10 +1,10 @@
-budy{
+body{
     margin: 0;
     padding: 0;
     border: 0;
     font-family: 'Alegreya', serif;
     background-image: url(../images/background-fon-window3.png);
-    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #myVideo {
@@ -91,6 +91,10 @@ a {
         margin-right: 5vw;
         margin-top: 5vw;
         display: block;
+    }
+
+    .vid{
+        display: none;
     }
     
 }
